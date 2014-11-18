@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+default_sleep=5
+
+make -f make.make
+if [ $# == 0 ]; 
+then 
+    sleep $default_sleep
+else
+    sleep $1
+fi
+time ./target
