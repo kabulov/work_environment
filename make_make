@@ -1,0 +1,19 @@
+
+
+CC=g++
+LL=c++
+LV=c++11
+SS=268435456
+ST=-Wl,--stack=$(SS)
+OO=-fno-optimize-sibling-calls -fno-strict-aliasing
+
+FF=-O2 $(OO) -static -lm -s -x $(LL) -std=$(LV)
+
+all: target
+	
+
+target: solution.cpp
+	g++ $(FF) -o target solution.cpp
+
+clean:
+	rm -rf *.o target
