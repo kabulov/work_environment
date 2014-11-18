@@ -1,0 +1,31 @@
+
+
+#include <cassert>
+#include <algorithm>
+#include <iostream>
+#include <functional>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <memory>
+#include <set>
+#include <map>
+#include <hash_set>
+#include <hash_map>
+#include <vector>
+#include <stack>
+
+
+using namespace std;
+
+int main() {
+
+#ifndef ONLINE_JUDGE
+  assert(freopen("input.txt", "r", stdin));
+  assert(freopen("output.txt", "w", stdout));
+#endif
+  
+	
+
+  return 0;
+}
