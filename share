@@ -1,0 +1,11 @@
+
+share is a mountpoint to which vm_share shared folder is mounted
+
+use command
+mount -t vboxsf vm_share share
+or
+mount -t vboxsf vm_share /home/kabulov/contest/share
+it  is also mounted to /home/kabulov/share
+
+to mount vm_share to mountpoints specified above 
+ append /etc/rc.local with commands given above
