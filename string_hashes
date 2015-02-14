@@ -1,0 +1,26 @@
+
+pairs
+
+(313, 1e9+7)
+(31, 1e9+7)
+(4243, 1e9+7)
+(1e4+7,42424243)
+(31,999999937)
+(37,999999929)
+
+interesting hashing
+
+  long[] rnd = new long[256];
+  Random random = new Random(-1);
+  for (int i = 0; i < 256; i++) {
+      rnd[i] = random.nextLong();
+  }
+  Set<Long> set = new HashSet<>();
+  for (int i = 0; i < n; i++) {
+      char[] s = in.readCharWord();
+      long hash = 0;
+      for (int j = 0; j < s.length; j++) {
+          hash ^= (2 + j) * rnd[s[j]];
+      }
+      set.add(hash);
+  }
